@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family:  sans-serif;
+    line-height: 2em;
+}
+header {
+    padding: 20px 20px 20px 20px;
+    background-color: #01192c;
+    color: white;
+}
+#header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px;
+}
+li a:hover {
+    opacity: 0.4;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+ padding: 0px 40px 0px 20px;
+}
+time {
+    padding-left: 20em;
+}
+time, h2 {
+    color: green
+}
+.header-content {
+    text-align:center ;
+}
+button {
+    color: white;
+    background-color: transparent;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: white;
+    color: #01192c;
+    border: 1px solid #01192c;
+    transition: ease-in 1s;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+footer {
+    background-color: #01192c;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+    color: white;
+    
+}
+
+
+footer li a{
+    text-transform: capitalize;
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    #header {
+        grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    time {
+        padding: 0px;
+    }
+    li a {
+      font-size: 10px;
+      margin: 5px;
+    }
+    ul {
+        padding: 0px 10px 0px 5px;
+    }
+    main {
+        grid-template-columns: 2fr;
+    }
+}
+@media only screen and (max-width: 540px) {
+    h1, h2 {
+        font-size: 1em;
+    }
+    time, p {
+        font-size: 10px;
+    }
+    li a {
+        margin: none;
+    }
+    ul {
+        margin: none;
+    }
+}
+@media only screen and (max-width: 460px) {
+   body {
+       line-height: 20px;
+   }
+    #header {
+        grid-template-columns: 2fr;
+        padding: 0px;
+    }
+    button {
+        padding: 10px;
+    }
+}
+
